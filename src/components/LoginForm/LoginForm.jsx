@@ -28,7 +28,7 @@ export default class SignUpForm extends Component {
       if (!fetchResponse.ok) throw new Error('Fetch failed - Bad request')
 
       let token = await fetchResponse.json() // 3. decode fetch response: get jwt token from srv
-      localStorage.setItem('token', token);  // 4. Stick token into localStorage
+      window.localStorage.setItem('token', token);  // 4. Stick token into localStorage
 
       const userDoc = JSON.parse(atob(token.split('.')[1])).user; // 5. Decode the token + put user document into state
       this.props.setUserInState(userDoc)

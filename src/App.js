@@ -4,7 +4,8 @@ import './App.css';
 import { Route } from 'react-router-dom';
 // import NewOrderPage from './pages/NewOrderPage/NewOrderPage'
 // import OrderHistoryPage from './pages/OrderHistoryPage/OrderHistoryPage'
-import AuthPage from './pages/AuthPage/AuthPage'
+import AuthPage from './pages/AuthPage/AuthPage';
+import UserLogOut from './components/UserLogOut/UserLogOut';
 import TestPage from './pages/TestPage/TestPage';
 
 class App extends Component {
@@ -34,6 +35,7 @@ class App extends Component {
         { this.state.user ? 
 
           <div className="App">
+          <UserLogOut />
           <header className="App-header">SEI-Cafe</header>
           </div>
 
