@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 // Add the Route named import
-import { Route } from 'react-router-dom';
+
 // import NewOrderPage from './pages/NewOrderPage/NewOrderPage'
 // import OrderHistoryPage from './pages/OrderHistoryPage/OrderHistoryPage'
 import AuthPage from './pages/AuthPage/AuthPage';
 import UserLogOut from './components/UserLogOut/UserLogOut';
 import TestPage from './pages/TestPage/TestPage';
+import AllQuestions from './pages/AllQuestions/AllQuestions';
+import Collaboration from './pages/Collaboration/Collaboration';
 
 class App extends Component {
   state = {
@@ -35,8 +37,19 @@ class App extends Component {
         { this.state.user ? 
 
           <div className="App">
-          <UserLogOut />
-          <header className="App-header">SEI-Cafe</header>
+          <header className="App-header">Behavioural Based Questionnaire</header>
+          {/* <UserLogOut />
+          <Route path='/questions/all' render={(props) => (
+            <AllQuestions {...props}/>
+          )}/>
+          <Route path='questions/collaboration' render={(props) => (
+            <Collaboration {...props}/>
+          )} /> */}
+          <UserLogOut/>
+          <AllQuestions />
+          <Collaboration/>
+
+
           </div>
 
 
