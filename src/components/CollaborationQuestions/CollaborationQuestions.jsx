@@ -4,7 +4,7 @@ function CollaborationQuestions(props) {
     return (
         <div className = 'Collaboration'>
           <div classname = 'Question'>
-          <h2>Question: {props.question} </h2>
+          <h2 id="question" name="question">Question: {props.question} </h2>
           <form> 
             <label> Situation</label>
             <input id="situation" name="situation" type="text"  required/>
