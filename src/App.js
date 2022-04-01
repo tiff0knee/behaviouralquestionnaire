@@ -1,25 +1,49 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+// Add the Route named import
+import { Route } from 'react-router-dom';
+// import NewOrderPage from './pages/NewOrderPage/NewOrderPage'
+// import OrderHistoryPage from './pages/OrderHistoryPage/OrderHistoryPage'
+import AuthPage from './pages/AuthPage/AuthPage'
+import TestPage from './pages/TestPage/TestPage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    user:null,
+  }
+  
+  setUserInState = (incomingUserData) => {
+    this.setState({ user: incomingUserData})
+  }
+
+  componentDidMount() {
+    let token = window.localStorage.getItem('token')
+    if (token) {
+      // YOU DO: check expiry!
+      let userDoc = JSON.parse(atob(token.split('.')[1])).user // decode jwt token
+      this.setState({user: userDoc})      
+    }
+  }
+
+  render() {
+    return (
+      <main className="App">
+        {/* this ternary operator asks: is there a user in state? */}
+        {/* if yes, they can see our pages: neworder, etc. */}
+        {/* if no(user is null), show them only the <AuthPage> */}
+        { this.state.user ? 
+
+          <div className="App">
+          <header className="App-header">SEI-Cafe</header>
+          </div>
+
+
+          :
+          <AuthPage setUserInState={this.setUserInState}/>
+        }
+      </main>
+    );
+  }
 }
 
 export default App;
