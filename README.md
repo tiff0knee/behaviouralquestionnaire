@@ -2,10 +2,11 @@
 
 Behavioural Based Questionnaire is created for users to document their responses to behavioural based questions in interviews to set themselves up for success in the job seeking process.
 
+The app can be found in the link [here](https://behaviouralquestions.herokuapp.com/)
+
 ## Trello Board
 
-The Trello board can be found in the link below: 
-[Trello](https://trello.com/b/uBDb0cjH/react-project-behavioural-based-questions)
+The Trello board can be found in the link [here](https://trello.com/b/uBDb0cjH/react-project-behavioural-based-questions)
 
 ## Entity Relationship Diagram
 <img src="/public/entityrelationshipdiagram.png">
