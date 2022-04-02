@@ -18,8 +18,8 @@ The Trello board can be found in the link [here](https://trello.com/b/uBDb0cjH/r
 
 ## Screenshots
 
-<img src="/public/screenshotone.png" width="222" height="300">
-<img src="/public/screenshottwo.png">
+<img src="/public/screenshotone.png" width="300" height="300">
+<img src="/public/screenshottwo.png" width="222" height="300">
 
 ## Technology
 
