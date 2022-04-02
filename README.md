@@ -12,8 +12,8 @@ The Trello board can be found in the link below:
 
 ## Wireframe
 
-<img src="/public/wireframeone.png">
-<img src="/public/wireframetwo.png">
+<img src="/public/wireframeone.png" >
+<img src="/public/wireframetwo.png" width="148" height="200">
 
 ## Technology
 
