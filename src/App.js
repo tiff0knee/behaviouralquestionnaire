@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 // Add the Route named import
-
+import { Route, Switch, Redirect } from 'react-router-dom';
 // import NewOrderPage from './pages/NewOrderPage/NewOrderPage'
 // import OrderHistoryPage from './pages/OrderHistoryPage/OrderHistoryPage'
 import AuthPage from './pages/AuthPage/AuthPage';
@@ -46,7 +46,7 @@ class App extends Component {
             <Collaboration {...props}/>
           )} /> */}
           <UserLogOut/>
-          <AllQuestions />
+
           <Collaboration/>
 
 

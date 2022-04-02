@@ -1,10 +1,12 @@
 import React from 'react';
-import { useState } from 'react';
 import CollaborationQuestions from '../../components/CollaborationQuestions/CollaborationQuestions';
 
 
-function Collaboration(props){
+class Collaboration extends React.Component{
 
+
+
+    render(){
     return(
         <div className='Collaboration'>
             <CollaborationQuestions question={"How do you provide feedback to a colleague who is struggling or performing poorly?"}/>
@@ -13,6 +15,6 @@ function Collaboration(props){
             <CollaborationQuestions question={"Describe a situation where communication issues led to poor performance. How did you recognize the problem and respond?"}/>
         </div>
     )
-}
+}}
 
 export default Collaboration;

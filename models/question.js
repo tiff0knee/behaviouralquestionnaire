@@ -5,11 +5,11 @@ const Schema = mongoose.Schema;
 
 
 const questionSchema = new Schema({
-    answers: [question: String,
+    question: {question: String,
     situation: String,
     task: String,
     action: String,
-    result: String]
+    result: String}},
     {
         timestamps: true,
     }
@@ -17,4 +17,5 @@ const questionSchema = new Schema({
 )
 
 
-module.exports = mongoose.model('Question', questionSchema);
+let QuestionModel = mongoose.model('Question', questionSchema);
+module.exports = QuestionModel;

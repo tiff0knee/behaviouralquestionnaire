@@ -1,7 +1,8 @@
 const QuestionModel = require('../models/question');
 
 module.exports = {
-    create
+    create,
+
 }
 
 async function create(req, res) {
