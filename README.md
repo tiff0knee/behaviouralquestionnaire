@@ -16,6 +16,11 @@ The Trello board can be found in the link [here](https://trello.com/b/uBDb0cjH/r
 <img src="/public/wireframeone.png" width="222" height="300">
 <img src="/public/wireframetwo.png" width="222" height="300">
 
+## Screenshots
+
+<img src="/public/screenshotone.png" width="222" height="300">
+<img src="/public/screenshottwo.png">
+
 ## Technology
 
 This app uses the following technology:
