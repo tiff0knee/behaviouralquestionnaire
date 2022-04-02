@@ -25,8 +25,8 @@ This app uses the following technology:
 
 
 ## Icebox
--Read, update, delete questions
--enhance CSS
+- Read, update, delete questions
+- enhance CSS
 
 
 
