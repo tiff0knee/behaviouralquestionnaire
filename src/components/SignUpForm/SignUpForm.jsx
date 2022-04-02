@@ -30,10 +30,10 @@ export default class SignUpForm extends Component {
       // 2. Check "fetchResponse.ok". False means status code was 4xx from the server/controller action
       if (!fetchResponse.ok) throw new Error('Fetch failed - Bad request')
       
-      let token = await fetchResponse.json() // 3. decode fetch response to get jwt from srv
-      window.localStorage.setItem('token', token);  // 4. Stick token into localStorage
+      let token = await fetchResponse.json() 
+      window.localStorage.setItem('token', token);  
       
-      const userDoc = JSON.parse(atob(token.split('.')[1])).user; // 5. Decode the token + put user document into state
+      const userDoc = JSON.parse(window.atob(token.split('.')[1])).user; 
       this.props.setUserInState(userDoc)
 
     } catch (err) {
@@ -46,9 +46,9 @@ export default class SignUpForm extends Component {
     const disable = this.state.password !== this.state.confirm;
     return (
       <div>
-        <h1>Behavioural Interview Questionnaire</h1>
-        <div className="form-container">
 
+        <div className="form-container">
+        <h1>Behavioural Interview Questionnaire</h1>
           <form autoComplete="off" onSubmit={this.handleSubmit}>
             <label>Name</label>
             <input type="text" name="name" value={this.state.name} onChange={this.handleChange} required />
