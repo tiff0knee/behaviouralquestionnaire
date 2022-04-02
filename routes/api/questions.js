@@ -4,6 +4,7 @@ const questionCtrl = require('../../controllers/questions');
 
 
 router.post('/questions', questionCtrl.create);
+router.get('/questions', questionCtrl.index );
 
 
 

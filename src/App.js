@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 // Add the Route named import
-import { Route, Switch, Redirect } from 'react-router-dom';
-// import NewOrderPage from './pages/NewOrderPage/NewOrderPage'
-// import OrderHistoryPage from './pages/OrderHistoryPage/OrderHistoryPage'
+import { Route, Redirect } from 'react-router-dom';
 import AuthPage from './pages/AuthPage/AuthPage';
 import UserLogOut from './components/UserLogOut/UserLogOut';
-import TestPage from './pages/TestPage/TestPage';
 import AllQuestions from './pages/AllQuestions/AllQuestions';
 import Collaboration from './pages/Collaboration/Collaboration';
 
@@ -28,9 +25,6 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
-    console.log('App: componentDidMount');
-  }  
 
   render() {
     return (
@@ -41,6 +35,7 @@ class App extends Component {
         { this.state.user ? 
 
           <div className="App">
+
           <header className="App-header">Behavioural Based Questionnaire</header>
 
           <UserLogOut/>
