@@ -1,0 +1,33 @@
+
+
+.QuestionBox {
+    margin: auto;
+    border-radius: 25px;
+    padding: 20px;
+    width: 700px;
+    height: 450px;
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+label {
+    margin: auto;
+    color: teal;
+    font-size: 20px;
+}
+input { 
+    margin: auto;
+    display: block;
+}
+
+.button {
+    margin-top: 10px;
+}
+
+h4 {
+    color: teal;
+    font-size: 20px;
+}

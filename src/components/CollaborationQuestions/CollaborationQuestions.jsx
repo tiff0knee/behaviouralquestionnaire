@@ -1,4 +1,5 @@
 import React from 'react';
+import './CollaborationQuestions.css'
 
 
 // 1) add a state for each field in the form
@@ -50,28 +51,28 @@ class CollaborationQuestions extends React.Component{
 
   render(){
     if(this.state.done){
-      return <h3>Thanks for answering the question</h3>
+      return <h4>Thanks for answering the question</h4>
     }
 
     return (
-      <div className='Collaboration'>
-        <div className='Question'>
-          <h2 id="question" name="question">Question: {this.props.question} </h2>
+      <div className='CollaborationDiv'>
+        <div className='QuestionBox'>
+          <h3 id="question" name="question">Question: {this.props.question} </h3>
           
           <form onSubmit={this.submitQuestion}> 
             <label> Situation</label>
-            <input className="situation" name="situation" type="text" value={this.state.situation} onChange={this.handleChange}  required/>
+            <input size="70" className="situation" name="situation" type="text" value={this.state.situation} onChange={this.handleChange}  required/>
 
             <label> Task</label>
-            <input className="task" name="task" type="text"  value={this.state.task} onChange={this.handleChange} required/>
+            <input size="70" className="task" name="task" type="text"  value={this.state.task} onChange={this.handleChange} required/>
 
             <label> Action</label>
-            <input className="action" name="action" type="text" value={this.state.action} onChange={this.handleChange}  required/>
+            <input size="70" className="action" name="action" type="text" value={this.state.action} onChange={this.handleChange}  required/>
 
             <label> Result</label>
-            <input className="result" name="result" type="text"  value={this.state.result}  onChange={this.handleChange} required/>
+            <input size="70" className="result" name="result" type="text"  value={this.state.result}  onChange={this.handleChange} required/>
 
-            <input type="submit" value="Answer this question" />
+            <input className="button" type="submit" value="Answer this question" />
           </form>
 
         </div>

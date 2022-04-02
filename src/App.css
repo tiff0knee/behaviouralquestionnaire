@@ -1,15 +1,17 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-header {
-  background-color: #222;
+  background-color: teal;
   height: 100px;
   padding: 20px;
   color: white;
-  font-size: 20px;
+  font-size: 50px;
   text-align: center;
 }
+
+
 
 img{
   max-height: 100px;
@@ -17,5 +19,11 @@ img{
 }
 
 h1{
+  font-size: 20px;
+  color: teal;
+}
+
+label {
+  color: teal;
   font-size: 20px;
 }
