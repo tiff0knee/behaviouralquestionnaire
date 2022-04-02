@@ -27,3 +27,24 @@ label {
   color: teal;
   font-size: 20px;
 }
+
+
+
+.form-container {
+  margin: auto;
+  border-radius: 25px;
+  padding: 20px;
+  width: 700px;
+  height: 400px;
+  border-width:2px;
+  border-style:solid;
+  border-color:black;
+  display: block;
+  margin-bottom: 5px;
+  
+}
+
+button {
+  margin: 20px;
+
+}

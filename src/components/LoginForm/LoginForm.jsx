@@ -1,4 +1,6 @@
 import { Component } from 'react';
+import './LoginForm.css';
+
 
 export default class SignUpForm extends Component {
   state = {
@@ -43,6 +45,7 @@ export default class SignUpForm extends Component {
     return (
       <div>
         <div className="form-container" onSubmit={this.handleSubmit}>
+          <h1>Behavioural Interview Questionnaire</h1>
           <form autoComplete="off" >
             <label>Email</label>
             <input type="text" name="email" value={this.state.email} onChange={this.handleChange} required />

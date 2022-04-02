@@ -28,6 +28,10 @@ class App extends Component {
     }
   }
 
+  componentDidMount() {
+    console.log('App: componentDidMount');
+  }  
+
   render() {
     return (
       <main className="App">
@@ -38,14 +42,8 @@ class App extends Component {
 
           <div className="App">
           <header className="App-header">Behavioural Based Questionnaire</header>
-          {/* <UserLogOut />
-          <Route path='/questions/all' render={(props) => (
-            <AllQuestions {...props}/>
-          )}/>
-          <Route path='questions/collaboration' render={(props) => (
-            <Collaboration {...props}/>
-          )} /> */}
-          <UserLogOut className="logout"/>
+
+          <UserLogOut/>
 
           <Collaboration/>
 
