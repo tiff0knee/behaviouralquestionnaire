@@ -12,8 +12,8 @@ The Trello board can be found in the link below:
 
 ## Wireframe
 
-<img src="/public/wireframe1.png">
-<img src="/public/wireframe2.png">
+<img src="/public/wireframe1.png" width="348" height="754">
+<img src="/public/wireframe2.png" width="348" height="754">
 
 ## Technology
 
@@ -27,6 +27,6 @@ This app uses the following technology:
 ## Icebox
 -Read, update, delete questions
 -enhance CSS
--
+
 
 
