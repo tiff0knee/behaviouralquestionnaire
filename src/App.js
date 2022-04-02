@@ -45,7 +45,7 @@ class App extends Component {
           <Route path='questions/collaboration' render={(props) => (
             <Collaboration {...props}/>
           )} /> */}
-          <UserLogOut/>
+          <UserLogOut className="logout"/>
 
           <Collaboration/>
 

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import './UserLogOut.css';
 
 class UserLogOut extends Component{
     state={
@@ -14,7 +15,7 @@ class UserLogOut extends Component{
 
     render(){
         return(
-            <div className="UserLogOut ">   
+            <div className="UserLogOut">   
                 <Link onClick={this.logout} to='/'>Logout </Link>    
             </div>
         )
