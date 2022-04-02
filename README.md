@@ -2,9 +2,18 @@
 
 Behavioural Based Questionnaire is created for users to document their responses to behavioural based questions in interviews to set themselves up for success in the job seeking process.
 
-## Features
+## Trello Board
 
-In the project directory, you can run:
+The Trello board can be found in the link below: 
+[Trello](https://trello.com/b/uBDb0cjH/react-project-behavioural-based-questions)
+
+## Entity Relationship Diagram
+<img src="/public/entityrelationshipdiagram.png">
+
+## Wireframe
+
+<img src="/public/wireframe1.png">
+<img src="/public/wireframe2.png">
 
 ## Technology
 
@@ -12,5 +21,12 @@ This app uses the following technology:
 - MongoDB
 - Node.js
 - React
-- Bootstrap
+- express
+
+
+## Icebox
+-Read, update, delete questions
+-enhance CSS
+-
+
 
